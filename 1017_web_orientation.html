@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>media orientation</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+	<!-- meta viewport : 모바일 브라우저의 뷰포트 크기 조절을 위해 설정 -->
+	<!-- user-scalable=no : 사용자크기변화를 no로 처리해서 크기변화를 못하게 막는다. -->
+	<!-- initial-scale=1 : minimun, maximum 속성 값으로 결정되며 보이는 영역에서 웹페이지에 맞추기 위해 계산되는 속성 -->
+	<!-- maximum-scale=1 : 최대사이즈를 1.0으로 처리해서 확대를 못하게 막는다. -->
+	<style>
+		body {
+			margin: 5% 30%
+		}
+
+		@media screen and (orientation: portrait) { /* portrait : 세로 모드 */
+			body { background-color: #ffd9b3; }		/* body 부분 배경 색 */
+		}
+
+		@media screen and (orientation: landscape) { /* Landscape : 가로 모드 */
+			body { background-color: #d9ffb3 }		 /* body 부분 배경 색 */
+		}
+		/* orientation 속성 정리하기 */
+	</style>
+</head>
+<body>
+	<a href="1203_webpage_start.html"><img src="./img/back3.png" width="50" height="50"></a>
+	<h1>Lorem ipsum dolor sit amet</h1>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
+	It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>
+	It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
+	and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</body>
+</html>
